@@ -35,6 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Block.o \
+	${OBJECTDIR}/Map.o \
 	${OBJECTDIR}/Sprite.o \
 	${OBJECTDIR}/main.o
 
@@ -62,6 +64,16 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cgame: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cgame ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Block.o: Block.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.c) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Block.o Block.c
+
+${OBJECTDIR}/Map.o: Map.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.c) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/Map.o Map.c
 
 ${OBJECTDIR}/Sprite.o: Sprite.c 
 	${MKDIR} -p ${OBJECTDIR}

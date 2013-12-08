@@ -22,8 +22,7 @@ int main(int argc, char** argv) {
     for (i =0;i<5;i++)
         add_new_sprite();
     
-    struct generic_sprite *gs;
-    gs = glob_sprite;
+    struct generic_sprite *gs = glob_sprite;
     while (TRUE)
     {
 

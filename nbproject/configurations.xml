@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="88">
+<configurationDescriptor version="89">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Block.c</itemPath>
+      <itemPath>Display.h</itemPath>
+      <itemPath>Map.h</itemPath>
       <itemPath>Sprite.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -13,6 +16,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Map.c</itemPath>
       <itemPath>Sprite.c</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
@@ -34,9 +38,19 @@
       <toolsSet>
         <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
         <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Block.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Display.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Map.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Sprite.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Sprite.h" ex="false" tool="3" flavor2="0">
@@ -48,6 +62,8 @@
       <toolsSet>
         <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
         <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
         <cTool>
@@ -63,6 +79,14 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Block.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Display.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Map.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Sprite.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Sprite.h" ex="false" tool="3" flavor2="0">
